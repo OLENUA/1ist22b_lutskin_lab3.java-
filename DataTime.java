@@ -38,7 +38,7 @@ public class DataTime {
         }
         SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy,MM,dd");
         String dante = DATE_FORMAT.format(result);
-        System.out.println(dante);
+        System.out.println("Найближча дата : " + dante);
 
         }
         public void ageCalculate(String surName,Date birthDate) throws ParseException {
@@ -49,7 +49,7 @@ public class DataTime {
             int ageDeltaY = Math.abs(ourDays.getYear() - birthDate.getYear());
             int ageDeltaM = Math.abs(ourDays.getMonth() - birthDate.getMonth());
             if (ageDeltaM > ourDays.getMonth()) {ageDeltaY = ageDeltaY-1 ;}
-            System.out.println(surName+" age is : " + ageDeltaY+" years");
+            System.out.println(surName+" вік : " + ageDeltaY+" років");
         }
     }
 
